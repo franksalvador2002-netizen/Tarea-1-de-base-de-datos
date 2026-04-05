@@ -78,6 +78,15 @@ INSERT INTO transferencias (origen, destino, fecha_hora, monto) VALUES
 (1, 2, NOW() - INTERVAL 1 DAY, 500),(1, 3, NOW() - INTERVAL 1 DAY, 300),
 (1, 4, NOW() - INTERVAL 1 DAY, 200),(2, 1, NOW() - INTERVAL 2 DAY, 1000),
 (3, 1, NOW() - INTERVAL 3 DAY, 400);
+
+
+select * from clientes;
+select * from cuentas;
+select * from transacciones;
+select * from tarjetas;
+select * from prestamos;
+select * from inversiones;
+select * from transferencias;
 -- lista todos los clientes con al menos una cuenta
 select distinct clientes. * from clientes inner join cuentas on clientes.id = cuentas.id_cliente;
 
